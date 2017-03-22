@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fanskda</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script src="JS/jquery-migrate-1.2.1.js"></script>
+  
+    <link rel="stylesheet" type="text/css" href="CSS/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="CSS/lessons.css">
+
+  	<script>
+  		$( function() 
+  		{
+		    $("#tabs").xtabs({
+		        scrollable: false,
+		        changeOnScroll: false,
+		        closable: true
+    		});
+  		});
+  	</script>
+
+</head>
+<body>
+	<div id=content-head>
+        <div id=site-logo>
+          <a href="secret.php"><img src="IMG/logo.png" /></a>
+        </div>
+				<!-- ON-CLICK LOG IN POP UP -->
+        <div id=login-button>
+          <a href="logout.php">
+            <button name="logout" style="width:150px; margin-left:-10px; margin-top:12px; background:#D31F38;">Log Out!</button>
+          </a>
+        </div>
+    <!-- END OF ON CLICK LOG IN POP UP -->
+	</div>
+<a href="to-CSS.html">
+  <button name="to-CSS" style="width:150px; margin-left:-10px; margin-top:12px; background:#D31F38; float:right;">CSS   <img src="IMG/right-arrow.svg" style="width:20px;height:20px; margin-left:30px;"></button>
+</a>
+	<div id=content-body style="margin-top:100px;">
+
+		<div id=wrapper>
+			<div id=instructions>
+				<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Intro</a></li>
+    <li><a href="#tabs-2">Paragraph and Heading</a></li>
+    <li><a href="#tabs-3">Images & Links</a></li>
+    <li><a href="#tabs-4">Dividers Class</a></li>
+    <li><a href="#tabs-5">Comments</a></li>
+    <li><a href="#tabs-6">Lists</a></li>
+    <li><a href="#tabs-7">Styling</a></li>
+  </ul>
+  <div id="tabs-1">
+    <h3>Welcome to the HTML lesson!</h3>
+    <ol>
+      <li>To begin coding using HTML, you start off with the element: 
+      <textarea rows="1" readonly><html></textarea>. </li><br>
+
+      <li>Don't forget to close your elements by repeating the element with a backslash infront of the element. An example of this is: <textarea rows="1" readonly></html></textarea> </li><br>
+
+      <li> Within the html elements now, you will seperate your content with:
+      <textarea rows="1" readonly><head>, <body></textarea> while remembering to close them respectively.<li><br>
+
+      <li>Now within your head element, Place the following element.<textarea rows="1" readonly><title> </title></textarea>
+        <p style="font-size:14px;">This element represents the title of the webpage being displayed.</p></li>
+    </ol>
+
+    Please Click on the next Tab to continue.
+  </div>
+  <div id="tabs-2">
+    <h3>Headings and paragraphs!</h3>
+    <ol>
+      <li>In the body element, type the following. 
+      <textarea rows="1" readonly><h1>Hello World!</h1></textarea>.</li><br>
+
+      <li>Great! Now that font is a little too big, lets reduce the heading type by replacing the above with: <textarea rows="1" readonly><h2>Hello World!</h2></textarea> </li><br>
+
+      <li>That's perfect! Keep in mind that there are six head tags ranging from <textarea rows="1" readonly><h1>...</h1></textarea> to <textarea rows="1" readonly><h6>...</h6></textarea> in order of importance(size and font-weight wise) from most important(1) to least important(6).</li><br>
+
+      <li>Type the following text in order to create a paragraph.<textarea rows="2" readonly><p>I am currently learning HTML</p></textarea></li>
+    </ol>
+
+    Please Click on the next Tab to continue.
+  </div>
+  <div id="tabs-3">
+    <h3>Images and links!</h3>
+    <ol>
+      <li>In the textarea to the left, add a picture of your liking. To do this, use the following code 
+      <textarea rows="2" readonly><img src="[link of your image]"/></textarea>.</li>
+        <p style="font-size:12px;">Please note that the image element is one of the few that does not need to be closed, These are known as self-closing elements..</p></li><br>
+
+      <li>Now with that picture, you should allow so that when it is clicked, it would redirect to something cool! Surround the image element in the following code for this to be done <textarea rows="3" readonly><a href="[link to the redirect website]">...</a></textarea>. </li>
+
+      <p>Amazing! Now whenever the picture is clicked, your code will send you to a website of your choosing. Isn't that neat?<p>
+      <br>
+    </ol>
+
+    Please Click on the next Tab to continue.
+  </div>
+  <div id="tabs-4">
+    <h3>Div[ID]ers [CLASS]!</h3>
+    <ol>
+      <p>In HTML coding, how your work is layed out is very important in the design aspect of creating a webpage.</p>
+
+      <li>Place a <textarea rows="1" readonly><div>...</div></textarea> element around all of the text in the editor</li>
+      <p>It is good practice to place your content in dividers. When we get to CSS, it will make things a lot easier!</p><br>
+
+      <li>Another thing to keep in mind is to give certain elements ID's and Classes. i.e. <textarea rows="1" readonly><div id="content-ID" class="content-class"></div></textarea>.</li>
+      <p>ID's and Classes are case sensitive and can contain any letter. There cannot include symbols, numbers or spaces however you can use a dash, ' - ', and/or an underscore, ' _ ', in your ID's or Classes. You will learn about the things you can do with these soon!<p>
+      <br>
+    </ol>
+
+    Please Click on the next Tab to continue.
+  </div>
+  <div id="tabs-5">
+    <h3>Comments</h3>
+      <ol>
+        <p>Comments are used to add little notes to someone reading your code.</p>
+
+        <li>Place <textarea rows="2" readonly><!-- We are going to be styling soon! --></textarea> next to your divider.</li><br>
+
+      </ol>
+
+      Please Click on the next Tab to continue.
+  </div>
+  <div id="tabs-6">
+    <h3>Lists</h3>
+      <ol>
+        <p>There are two types of lists, unordered lists and ordered lists.</p>
+
+        <li>Type the following unordered list in the text editor:<br>
+          <textarea rows="5" readonly><ul>
+            <li>This is the first unordered item in the list</li>
+            <li>This is the second unordered item in the list</li>
+            </ul></textarea></li><br>
+
+          <li>Now type the following ordered list in the text editor:
+            <textarea rows="5" readonly><ol>
+              <li>This is the first numbered item in the list</li>
+              <li>This is the second numbered item in the list</li>
+              </ol></textarea></li>
+
+            <p>The more li's placed, the longer the list!</p><br>
+      </ol>
+
+      Please Click on the next Tab to continue.
+  </div>
+  <div id="tabs-7">    
+  <h3>Styling</h3>
+      <ol>
+        <p>Now that you know the above, you must now learn how to style your web page!</p>
+
+        <li>As a simple introduction into styling, simply just add the following attribute to your ordered list element:
+          <textarea rows="3" readonly>style="list-style-type:none;"</textarea></li>
+          <p> Please note, your ordered list element should look something like this.
+            <textarea rows="3" readonly><ul style="list-style-type:none;">... </ul></textarea></p>
+
+        <li>Another way you can add styling to HTML is by using the <textarea><style>...</style></textarea> attribute. To use this, just add it in the head of the code and target an element using a selector then apply styling to it within a brace.</li>
+        <p>An example of what is expected can be seen in the following:
+            <textarea rows="3" readonly><style>
+              div{font-size:20px;background-color:magenta;color:white;border:5px solid black;}
+            </style></textarea></p><br>
+
+          <p>Can you guess what each selector did?</p>
+      </ol>
+
+      You have now reach the end of the HTML Lesson.
+    </div>
+  
+</div>
+			</div>
+			<div id=iframe-content>
+				<iframe src="code-editor/" width="775" height="610"></iframe>
+			</div>
+	</div>
+</body>
+</html>

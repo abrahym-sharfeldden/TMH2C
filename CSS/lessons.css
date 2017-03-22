@@ -1,0 +1,240 @@
+body
+{
+  width:100%;
+  height:auto;
+  background-image: url("../IMG/background.jpg");
+}
+
+#everything
+{
+  width:100%;
+  height:auto;
+}
+
+textarea
+{
+  resize:none;
+}
+/*
+
+
+						HEADER
+
+*/
+#content-head
+{
+  width:100%;
+  height:75px;
+  margin:auto;
+  position:relative;
+  background: #1F1F1F; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#5F9748,#256043); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5F9748,#256043); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5F9748,#256043); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#5F9748,#256043); /* Standard syntax (must be last) */
+}
+
+#site-logo
+{
+  width:250px;
+  height:auto;
+  background:/*pink*/ transparent;
+  position:absolute;
+    left:40%;
+    top:10px;
+}
+
+#site-logo img
+{
+  width:100%;
+}
+/* 
+                                NEW SHIT G
+                                */
+/* Full-width input fields */
+#login-button
+{
+  width:150px;
+  height:auto;
+  background:/*red*/ transparent;
+  float:right;
+}
+
+button[name="logout"] 
+{
+ /*   background:url('http://www.shabbychic.guru/wp-content/uploads/2016/02/powder-blue-wallpaper.jpg');  */
+   
+    width: 100px;
+    background:/* green */ #8CA3C3 ;
+    color: white;
+    font-size: 1.125em;
+    padding: 14px 20px;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="password"] 
+{
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Set a style for the login button */
+button
+{
+ /*   background:url('http://www.shabbychic.guru/wp-content/uploads/2016/02/powder-blue-wallpaper.jpg');  */
+   
+    width: 100px;
+    background:green;
+    color: white;
+    font-size: 1.125em;
+    padding: 14px 20px;
+    margin: 12px;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+/* Extra styles for the cancel button */
+.signupbtn 
+{
+    width: 90%;
+    padding: 10px 18px;
+    background-color: /* red */ #5785C6;
+}
+
+/* Center the image and position the close button */
+.imgcontainer 
+{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+} 
+
+img.avatar 
+{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container 
+{
+    padding: 16px;
+    background:url('http://www.shabbychic.guru/wp-content/uploads/2016/02/powder-blue-wallpaper.jpg');
+}
+span.psw 
+{
+    float: right;
+    margin-top: -75px;
+}
+/* The Modal (background) */
+.modal 
+{
+
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  display: none; /* Hidden by default */
+
+  overflow: auto; /* Enable scroll if needed */
+
+  z-index: 1; /* Sit on top */
+  
+  padding-top: 60px;
+
+  position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+}
+/* Modal Content/Box */
+.modal-content 
+{
+
+  width: 450px; /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+}
+/* The Close Button (x) */
+.close 
+{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover, .close:focus 
+{
+    color: red;
+    cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate 
+{
+    -webkit-animation: animatezoom 1.0s;
+    animation: animatezoom 1.0s
+}
+@-webkit-keyframes animatezoom {
+
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom 
+{
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) 
+{
+    span.psw 
+    {
+       display: block;
+       float: none;
+    }
+    .signupbtn 
+    {
+       width: 100%;
+    }
+}
+/* 
+                        END OF NEW SHIT 
+                                                    */
+/*
+
+/*
+
+                BODY
+
+                              */
+
+#content-body
+{
+  margin-top:20px;
+  position:relative;
+}
+
+#instructions
+{
+  width:37%;
+  height:625px;
+  background:white;
+  float:left;
+}
+
+#iframe-content
+{
+  background:white;
+  width:auto;
+  height:auto;
+  position:absolute;
+    left:38%;
+}

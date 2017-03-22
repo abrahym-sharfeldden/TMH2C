@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fanskda</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="CSS/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="CSS/lessons.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="JS/jquery-migrate-1.2.1.js"></script>
+  
+    <script>
+      $( function() 
+      {
+        $("#tabs").xtabs({
+            scrollable: false,
+            changeOnScroll: false,
+            closable: false
+        });
+      });
+    </script>
+
+</head>
+<body>
+  <div id=content-head>
+        <div id=site-logo>
+          <a href="secret.php"><img src="IMG/logo.png" /></a>
+        </div>
+        <!-- ON-CLICK LOG IN POP UP -->
+        <div id=login-button>
+          <a href="logout.php">
+            <button name="logout" style="width:150px; margin-left:-10px; margin-top:12px; background:#D31F38;">Log Out!</button>
+          </a>
+        </div>
+    <!-- END OF ON CLICK LOG IN POP UP -->
+  </div>
+
+
+<a href="to-HTML.html">
+  <button name="to-HTML" style="width:130px; margin-left:10px; margin-top:12px; background:#D31F38; float:left;"><img src="http://image.flaticon.com/icons/png/512/70/70429.png" style="width:20px; height:20px; margin-left:-20px;">  HTML</button>
+</a>
+
+<a href="to-JS.html">
+  <button name="to-JS" style="width:160px; margin-right:20px; margin-top:12px; background:#D31F38; float:right;">JavaScript<img src="IMG/right-arrow.svg" style="width:20px;height:20px; margin-left:10px;"></button>
+</a>
+  <div id=content-body style="margin-top:100px;">
+    <div id=wrapper>
+      <div id=instructions>
+        <div id="tabs">
+  <ol>
+    <li><a href="#tabs-1">Intro</a></li>
+    <li><a href="#tabs-2">Basic Styling</a></li>
+    <li><a href="#tabs-3">Font Styling</a></li>
+    <li><a href="#tabs-4">Comments</a></li>
+    <li><a href="#tabs-5">More CSS References</a></li>
+  </ol>
+  <div id="tabs-1">
+        <h3>Welcome to the CSS lesson!</h3>
+
+        <ol>
+          <li>To begin coding using CSS, you must start off with HTML Code. Please type the following in the black text area:
+
+          <br><br>
+          
+            <textarea rows="45" readonly>
+              <html>
+                <head>
+                  <title></title>
+                  <style></style>
+                </head>
+                
+                <body>
+                  <div class="container" id="head">
+                    <h1>Welcome to the CSS Lesson!</h1>
+                  </div>
+
+                  <div class="container" id="body">
+                    <p>In this lesson you will learn the basics on styling HTML code with CSS.</p>
+                    <p>For this lesson, the styling will all be done on the same page as the HTML code using the <style>...</style> element</p>
+                  </div>
+
+                  <div class="container" id="foot">
+                    <p>In this lesson you will also be introduced with new HTML elements.</p>
+                    <input type="submit" name="button">
+                  </div>
+                </body>
+              </html>
+            </textarea>.
+          </li>
+
+          <br>
+
+        </ol>
+
+    Please Click on the next Tab to continue.
+  </div>
+  <div id="tabs-2">
+
+            <h3>Basic Stylings</h3>
+            <ol>
+            <li>Now, with CSS you can manipulate width and height of content. Within the style element, target the class container and give it a width of 400px and a height of 200px <textarea rows="4" readyonly> <style>
+            .container {
+              width:400px;
+              height:100px;
+              background:green;
+            }
+            </style>
+            </textarea>
+
+            <p>Notice how everything was placed in green boxes. This is because the background was given the color green. The color was placed inside the divider's width and height that was also specified with the class's styling. The background color could either be a raw color, i.e. red,green,blue,yellow etc, or a hexidecimal code, i.e. #FFFFFF(white), #000000(black).</p></li>
+          
+          <li>If you want your work to be centered, there are several ways you can accomplish this. You can use
+            <ol>
+              <li><textarea>display:flex;justify-content:center;</textarea></li>
+              <li><textarea>margin:auto;</textarea></li>
+            </ol>
+          <br>
+          Either of these two work in order to position a divider to the center of the text.</li>
+          </ol>
+
+    Please Click on the next Tab to continue.
+  </div>
+  <div id="tabs-3">
+            <h3>Font Stylings</h3>
+          <ol>
+            <li>Now that we have an idea of how CSS works, time to introduce more styling rights. Change the 'font-family' of the text in the dividers with a class of container to "Helvetica". It is also good practice to provide fallback font-families incase the first does not work. Add "Times New Roman" and "sans-serif" as the fallback font for the font-family.
+
+            Your font-family line should now look like this: <textarea rows="10" cols="40"><style>
+            .container  {
+              width:400px;
+              height:100px;
+              background:green;
+              font-family:"Helvetica","Times New Roman", "sans-serif";
+            }
+
+            </style>
+
+            </textarea></li>
+            <li>Great! Now we want to change the size of some of the text in the page. Target the header using the h1 selector and give it a font-size of 40px and change its font-family to something more intense, like "Impact".</li>
+            <li>If you want your text to increase/decreae with respect to the size of the window, you can manipulate the size using percentages or "em's". Each of which manipulate the default font-size of the webpage(16px if unspecified) </li>
+
+            </ol>
+    Please Click on the next Tab to continue.
+  </div>
+  <div id="tabs-4">
+    <h3>Comments</h3>
+          <ol>
+            <li>A quick thing to note is, just like in HTML, you can use comments to give a very brief and/or simple description of a bit of the code. However, it is done differently than it is in HTML.</li>
+            <li>To job your memory, a comment in HTML is surrounded by the following code. <textarea> <!-- This is a comment. <h1> Nothing here gets shown.</h1><p>Place this in your code and try it out yourself.</p> --></textarea></li>
+            <li>Comments in CSS is done using the following characters within the style elements<textarea>/* Place this inside your styling element and see if it affects anything */</textarea></li>
+          </ol>
+
+
+    Please Click on the next Tab to continue.
+  </div>
+  <div id="tabs-5">
+    <h1>CSS References</h1>
+      <li><p>Now that you have the basic understanding of CSS. You can use <a href="http://www.w3schools.com/cssref/default.asp">THIS</a> as a reference to the many many more CSS styling types available. There is no shame in not knowing them all. Remember, Google is your friend.<p></li>
+  </div>
+  
+</div>
+      </div>
+      <div id=iframe-content>
+        <iframe src="code-editor/" width="800" height="610"></iframe>
+      </div>
+  </div>
+</body>
+</html>
